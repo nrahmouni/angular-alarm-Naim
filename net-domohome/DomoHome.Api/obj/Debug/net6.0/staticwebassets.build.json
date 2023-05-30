@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "gXB7LL9w0OI4N648xIN0HhixJ379VLt0ZNMLOOVC3HE=",
+  "Source": "DomoHome.Api",
+  "BasePath": "_content/DomoHome.Api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

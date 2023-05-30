@@ -1,0 +1,13 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\DomoHome.Api",
+    "\\DomoHome.Api\\bin",
+    "\\DomoHome.Api\\Controllers",
+    "\\DomoHome.Api\\obj",
+    "\\DomoHome.Api\\Properties",
+    "\\DomoHome.Api\\Services"
+  ],
+  "SelectedNode": "\\DomoHome.Api\\Services\\AlarmHub.cs",
+  "PreviewInSolutionExplorer": false
+}

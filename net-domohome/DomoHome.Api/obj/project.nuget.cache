@@ -1,0 +1,21 @@
+{
+  "version": 2,
+  "dgSpecHash": "sdwo7g9wtQP8y0GemfJAyyEBNF6PegCV8rOsfMw2BA0d5HUSp96oG8i1685jNBCfrJ/+rDG78PCVa+1+Dxj0lA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\nr105682\\OneDrive\\OneDrive - Qorvo\\Documents\\ET\\angular-alarm\\net-domohome\\DomoHome.Api\\DomoHome.Api.csproj",
+  "expectedPackageFiles": [],
+  "logs": [
+    {
+      "code": "NU1803",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "You are running the 'restore' operation with an 'HTTP' source, 'http://gso0tfs2017:8080/tfs/NPI/_packaging/Foundation-Packages-Feed/nuget/v3/index.json'. Non-HTTPS access will be removed in a future version. Consider migrating to an 'HTTPS' source."
+    },
+    {
+      "code": "NU1803",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "You are running the 'restore' operation with an 'HTTP' source, 'http://nuget/nuget'. Non-HTTPS access will be removed in a future version. Consider migrating to an 'HTTPS' source."
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+--El backend, tiene un pequeño fallo que hace que el estado aparentemente se actualiza correctamente, pero de manera temporal.
+ Se pide: - Identificar y resolver el fallo.
+---
+En el código inicial, el estado del alarme se perdía al almacenarse en una variable local dentro del controlador AlarmController.
+En el código actual, se introdujo un servicio de alarma (AlarmService) para mantener el estado de forma persistente. 
+El servicio actualiza el estado y se comunica con el AlarmHub para notificar a los clientes sobre los cambios. 
+Esto soluciona el problema de pérdida de estado y garantiza la consistencia en toda la aplicación.
+---
+
+--¿Qué componente debería de tener un test unitario, según tu criterio y por qué?
+----
+En el caso específico de nuestra aplicación Angular, se recomienda priorizar las pruebas unitarias en los siguientes componentes:
+AlarmComponent: Este componente debería tener pruebas unitarias debido a su lógica compleja, que incluye el manejo del estado de la alarma,
+				la interacción con el servicio de la cámara y el formateo de la fecha y hora.
+CameraComponent: También es importante realizar pruebas unitarias en este componente, ya que se encarga de mostrar la imagen de la cámara y 
+				 realizar la solicitud al servicio correspondiente.
+CameraService: Este servicio, que se conecta a un servicio externo para obtener la imagen de la cámara, debe ser sometido a pruebas unitarias
+			   para asegurar su correcto funcionamiento y manejo de la comunicación con el servicio externo.
+Al realizar estas pruebas unitarias, se incrementará la confianza en la calidad y el correcto funcionamiento de nuestra aplicación.
+--
+
+--¿Cómo se puede mejorar el código aplicando el principio SOLID de Inversión de Dependencias en el microservicio en .NET? 
+Explica la estrategia que seguirías y proporciona un ejemplo de implementación.
+---
+He aplicado el principio SOLID de Inversión de Dependencias en el microservicio en .NET utilizando 
+la inyección de dependencias. Modifiqué las clases AlarmController y AlarmHub para que dependan de
+la interfaz IAlarmService en lugar de la implementación concreta AlarmService. Luego, implementé 
+la interfaz IAlarmService en la clase AlarmService. Finalmente, configuré la inyección de dependencias
+en la aplicación y registré la implementación de IAlarmService.
+---

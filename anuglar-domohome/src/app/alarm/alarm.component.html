@@ -1,0 +1,6 @@
+<!-- alarm.component.html -->
+<p>{{ alarmStatus }}</p>
+<p *ngIf="alarmDate">Fecha: {{ formattedAlarmDate }}</p>
+<button (click)="toggleAlarm()">Toggle Alarm</button>
+<app-camera *ngIf="alarmStatus === 'Alarm ON'"></app-camera>
+
